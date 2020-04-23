@@ -1,255 +1,279 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.jumbotron-fluid {
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Muli', sans-serif;
+}
+
+.h-text{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  color: rgba(163, 39, 39, 0.7);
+  margin-top: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
   }
-  
-  .jumbotron-fluid {
-    text-align: center;
+  to {
+    opacity: 1;
   }
-  
-  body {
-    background-color: black;
-    color: white;
-    font-family: 'Muli', sans-serif;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
   }
-  
-  .h-text{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
-    color: rgba(163, 39, 39, 0.7);
-    margin-top: 20px;
+  to {
+    opacity: 1;
   }
+}
+
+#about h1 {
+  text-align: center;
+  font-size: x-large;
+}
+
+#about p {
+  font-size: xx-large;
+}
+
+#container-links {
+  align-content: center;
+}
+
+.card1{
+  background-color: rgba(255, 0, 0, 0.150);
+  text-align: center;
+  margin-top: 100px;
+}
+
+.card2{
+  background-color: rgba(255, 0, 0, 0.150);
+  text-align: center;
+  margin-top: 70px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+}
+
+/*Donation form styling*/
+
+#mc_embed_signup{
+  background-color: rgba(255, 0, 0, 0.150);
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#approvalDenial{
+  display: none;
+  text-align: center;
+}
+
+
+
+
+
+.modal1{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal2{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal3{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content1 {
+  background-color: rgba(158, 27, 27, 0.582);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal-content2 {
+  background-color: rgba(158, 27, 27, 0.582);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal-content3 {
+  background-color: rgba(158, 27, 27, 0.582);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+/* The Close Button */
+.close {
+  color: #fff4f4;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.caption{
+  padding-top: 2%;
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+}
+.caption2{
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+}
+
+#don{
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 0.81%;
+  padding-bottom: 0.81%;
+}
+
+.rr{
+  text-align: center;
+  padding-left: 0%;
+  padding-top: 0%;
   
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1500px;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  #about h1 {
-    text-align: center;
-    font-size: x-large;
-  }
-  
-  #about p {
-    font-size: xx-large;
-  }
-  
-  #container-links {
-    align-content: center;
-  }
-  
-  .card1{
-    background-color: rgba(255, 0, 0, 0.150);
-    text-align: center;
-    margin-top: 100px;
-  }
-  
-  .card2{
-    background-color: rgba(255, 0, 0, 0.150);
-    text-align: center;
-    margin-top: 70px;
-  }
-  
-  .footer{
-    display: flex;
-    justify-content: center;
-  }
-  
-  /*Donation form styling*/
-  
-  #mc_embed_signup{
-    background-color: rgba(255, 0, 0, 0.150);
-    padding-left: 20px;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  #approvalDenial{
-    display: none;
-    text-align: center;
-  }
-  
-  
-  
-  
-  
-  .modal1{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  .modal2{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  .modal3{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content1 {
-    background-color: rgba(158, 27, 27, 0.582);
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  .modal-content2 {
-    background-color: rgba(158, 27, 27, 0.582);
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  .modal-content3 {
-    background-color: rgba(158, 27, 27, 0.582);
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  /* The Close Button */
-  .close {
-    color: #fff4f4;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  
-  .caption{
-    padding-top: 2%;
-    text-align: center;
-    font-family: Snell Roundhand, cursive;
-  }
+}
+
+#mc_embed_signup_scroll{
+  padding-right: 50%;
+  margin-right: 31%;
+}
+
