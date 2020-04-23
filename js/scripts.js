@@ -14,7 +14,7 @@ $("document").ready(function(){
     var donorEmail = document.getElementById("mce-EMAIL").value;
     var donationAmount = document.getElementById("mce-MMERGE3").value;
 
-    if(donationAmount == "" && donorName == ""){
+    if(donationAmount == "" || donorName == "" || donationAmount == ""){
       $(".nodon").slideToggle();
     }
     else{
