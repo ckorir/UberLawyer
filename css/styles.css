@@ -274,6 +274,47 @@ body {
 
 #mc_embed_signup_scroll{
   padding-right: 50%;
-  margin-right: 31%;
+  margin-right: 30%;
+}
+ 
+input[type=text], select {
+  padding: 4px;
+  border-radius: 7px;
+  background-color:  rgba(212, 226, 236, 0.411);
+  width: 400%;
+}
+input[type=number], select {
+  padding: 4px;
+  border-radius: 7px;
+  background-color:  rgba(212, 226, 236, 0.411);
+  width: 400%;
+}
+input[type=email], select {
+  padding: 4px;
+  border-radius: 7px;
+  background-color:  rgba(212, 226, 236, 0.411);
+  width: 400%;
+}
+::placeholder {
+  color: rgba(245, 245, 245, 0.699);
+  opacity: 1; /* Firefox */
+}
+textarea {
+  resize: none;
+  background-color:  rgba(212, 226, 236, 0.411);
+  border-radius: 3%;
+  width: 400%;
+}
+#mc_embed_signup{
+  padding-left: 20%;
 }
 
+button{
+  background-color:  rgba(212, 226, 236, 0.411);
+}
+
+input[type=submit], select {
+  background-color:  rgba(212, 226, 236, 0.411);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
